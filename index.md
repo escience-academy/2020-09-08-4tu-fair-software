@@ -69,7 +69,6 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -84,6 +83,8 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/intro.html %}
+{% elsif page.carpentry == "academy" %}
+{% include academy/intro.html %}
 {% endif %}
 
 {% comment %}
@@ -98,6 +99,8 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/who.html %}
+{% elsif page.carpentry == "academy" %}
+{% include academy/who.html %}
 {% endif %}
 
 {% comment %}
@@ -173,6 +176,7 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
+-->
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -206,7 +210,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -215,6 +219,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% elsif site.carpentry == "lc" %}
 <p><a href="{{ site.lc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+{% elsif page.carpentry == "academy" %}
+<p>Ask your instructor about pre- and post-workshop Survey details.</p>
 {% endif %}
 
 <hr/>
@@ -235,6 +241,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/schedule.html %}
+{% elsif page.carpentry == "academy" %}
+{% include academy/schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -280,6 +288,8 @@ please preview your site before committing, and make sure to run
 {% include dc/syllabus.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/syllabus.html %}
+{% elsif page.carpentry == "academy" %}
+{% include academy/syllabus.html %}
 {% endif %}
 
 <hr/>
@@ -299,15 +309,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if page.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
+  To participate in an eScience Academy Workshop workshop,
   you will need access to the software described below.
   In addition, you will need an up-to-date web browser.
 </p>
@@ -730,7 +732,6 @@ please preview your site before committing, and make sure to run
           Visit <a href="https://sqlitebrowser.org/dl/">SqliteBrowser</a> and download and install it. Version 3.11.0 or greater.
         </p>
       </article>
-      
     </div>
     {%else%}
     <div class="tab-content">
@@ -853,3 +854,9 @@ please preview your site before committing, and make sure to run
   </ol>
 </div>
 {% endcomment %}
+
+<div>
+  This website is based on the <a href='http://www.software-carpentry.org'>Software Carpentry</a>
+  workshop template (Copyright Software Carpentry) available under
+  <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0 license</a>.
+</div>

@@ -1,7 +1,6 @@
 # workshop-template
 
-This repository is The Carpentries' ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and [Library Carpentry][lc-site]'s)
-template for creating websites for workshops.
+This repository is [eScience academy][escience-academy] template (based on [Software Carpentry][swc-site] and [Data Carpentry][dc-site]'s template) for creating websites for workshops.
 
 1.  Please *do not fork this repository directly on GitHub.*
     Instead, please use GitHub's importer following [the instructions below](#creating-a-repository)
@@ -33,7 +32,7 @@ for your learners to practice in.
 2.  Go to <a href="https://github.com/new/import" target="_blank">GitHub's importer</a>.
 
 3.  Paste the url of this repo as the old repository to clone:
-    <https://github.com/carpentries/workshop-template>.
+    <https://github.com/escience-academy/workshop-template>.
 
 4.  Select the owner for your new repository.
     (This will probably be you, but may instead be an organization you belong to.)
@@ -70,26 +69,26 @@ please [get in touch](#getting-and-giving-help).
     if your username is `gvwilson`,
     the repository's URL will be `https://github.com/gvwilson/2016-12-01-miskatonic`.
 
-3.  Ensure you are on the gh-pages branch by clicking on the branch under the drop 
+3.  Ensure you are on the gh-pages branch by clicking on the branch under the drop
     down in the menu bar (see the note below):
 
     ![](fig/select-gh-pages-branch.png?raw=true)
 
 3.  Edit the header of `index.md` to customize the list of instructors,
-    workshop venue, etc. 
+    workshop venue, etc.
     You can do this in the browser by clicking on it in the file view on GitHub
     and then selecting the pencil icon in the menu bar:
 
     ![](fig/edit-index-file-menu-bar.png?raw=true)
-    
+
     Editing hints are embedded in `index.md`,
     and full instructions are in [the customization instructions][customization].
-    
+
 4.  Edit `_config.yml` to customize certain site-wide variables, such as: `carpentry` (to tell us which carpentry workshop this is), `title` (overall title for all pages), `workshop_repo` (the URL of the workshop repository on GitHub) and `workshop_site` (the repository's GitHub Pages URL).
 
     Editing hints are embedded in `_config.yml`,
     and full instructions are in [the customization instructions][customization].
-    
+
 5. Edit the `schedule.html` file to edit the schedule for your upcoming workshop. This file is located in the `_includes` directory, make sure to choose the one from the appropriate `dc` (Data Carpentry workshop), `lc` (Library Carpentry), or `sc` (Software Carpentry) subdirectory.
 
 6.  Alternatively,
@@ -102,7 +101,7 @@ please [get in touch](#getting-and-giving-help).
     git clone -b gh-pages https://github.com/your_username/YYYY-MM-DD-site
     ~~~
 
-    You should specify `-b gh-pages` to checkout the gh-pages branch because the imported 
+    You should specify `-b gh-pages` to checkout the gh-pages branch because the imported
     repository doesn't have a `master` branch.
 
     In order to view your changes once you are done editing,
@@ -266,3 +265,4 @@ or [mail us][email].
 [self-organized-workshop-form]: https://amy.software-carpentry.org/workshops/submit/
 [swc-site]: http://software-carpentry.org
 [lc-site]: https://librarycarpentry.org
+[escience-academy]: https://github.com/escience-academy

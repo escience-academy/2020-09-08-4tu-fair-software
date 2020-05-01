@@ -1,12 +1,12 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "academy"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
+carpentry: "fair-software"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
 venue: "Center for Molecular and Biomolecular Informatics, Radboud UMC"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+latlng: ""       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "May 27, 2020"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:30 am - 3:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-05-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -77,6 +77,8 @@ the pitch.
 {% include lc/intro.html %}
 {% elsif page.carpentry == "academy" %}
 {% include academy/intro.html %}
+{% elsif page.carpentry == "fair-software" %}
+{% include fair-software/intro.html %}
 {% endif %}
 
 {% comment %}
@@ -107,10 +109,13 @@ address.
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
+{% comment %}
+it's online, now directions
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+{% endcomment %}
 </p>
 {% endif %}
 
@@ -139,18 +144,18 @@ Modify the block below if there are any special requirements.
 
 {% comment%}
 CODE OF CONDUCT
-{% endcomment %}
+
 <p id="code-of-conduct">
 <strong>Code of Conduct:</strong>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
 </p>
-
+{% endcomment %}
 
 {% comment %}
 ACCESSIBILITY
 
 Modify the block below if there are any barriers to accessibility or
 special instructions.
-{% endcomment %}
+
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -168,7 +173,7 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
--->
+{% endcomment %}
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -199,7 +204,7 @@ Display the contact email address set in the configuration file.
 
 {% comment %} 
 SURVEYS - DO NOT EDIT SURVEY LINKS 
-{% endcomment %}
+
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "swc" %}
@@ -214,7 +219,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% elsif page.carpentry == "academy" %}
 <p>Ask your instructor about pre- and post-workshop Survey details.</p>
 {% endif %}
-
+{% endcomment %}
 <hr/>
 
 
@@ -235,6 +240,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include lc/schedule.html %}
 {% elsif page.carpentry == "academy" %}
 {% include academy/schedule.html %}
+{% elsif page.carpentry == "fair-software" %}
+{% include fair-software/schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -282,6 +289,8 @@ please preview your site before committing, and make sure to run
 {% include lc/syllabus.html %}
 {% elsif page.carpentry == "academy" %}
 {% include academy/syllabus.html %}
+{% elsif page.carpentry == "fair-software" %}
+{% include fair-software/syllabus.html %}
 {% endif %}
 
 <hr/>

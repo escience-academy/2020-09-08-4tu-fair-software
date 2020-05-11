@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "fair-software"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
-                      # Be sure to update the Carpentry type in _config.yml as well.  
+carpentry: "fair-software"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").
+                      # Be sure to update the Carpentry type in _config.yml as well.
 venue: "Center for Molecular and Biomolecular Informatics, Radboud UMC"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
@@ -38,7 +38,7 @@ For a workshop please delete the following block
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
@@ -202,8 +202,8 @@ Display the contact email address set in the configuration file.
 
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
@@ -310,15 +310,15 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in and online FAIR Software Workshop,
-  you will need follow instructions descrbed below.
+  To participate in an online FAIR Software Workshop,
+  you will need to follow instructions described below.
   In addition, you will need an up-to-date web browser.
 </p>
 
 <div id="zoom">
 <h3>Zoom Video Conferencing Software</h3>
 <p>
-  The workshop will be delivered via Zoom conferencing platform. You will need to install and test Zoom on your computer. Please follow the isntruction on following web pages.
+  The workshop will be delivered via the Zoom conferencing platform. You will need to install and test Zoom on your computer. Please follow the instructions on these web pages:
   <ul>
   <li><a href="https://zoom.us/download">Download and install Zoom</a></li>
   <li><a href="https://support.zoom.us/hc/en-us/articles/201362033-Getting-Started-on-Windows-and-Mac">Learn how to start using Zoom</a></li>
@@ -330,19 +330,19 @@ please preview your site before committing, and make sure to run
 <h3>GitHub</h3>
 <p>
 We will be learning how to create a GitHub repository and how to deposit your software there.
-You will need GitHub account to do that.
+You will need a GitHub account to do that.
 </p>
 <p>
-<a href="https://github.com/join?source=header-home">Create a GitHub account</a> if you haven’t done that you. Make sure you remember your password and can log in. 
+<a href="https://github.com/join?source=header-home">Create a GitHub account</a> if you haven’t done that yet. Make sure you remember your password and can log in.
 </p>
 
 <div id="bio.tools">
 <h3>Bio.tools</h3>
 <p>
-We will learn how to register your software in an online software registry. As an example, we will use <a href="https://bio.tools/">Bio.tools</a> a bioinformatics focused software registry supported by ELIXIR Europe. For the training purposes, we will use the <a href="https://dev.bio.tools">development instance of bio.tools</a>. You will need to create a dev.bio.tools account before the workshop.  
+We will learn how to register your software in an online software registry. As an example, we will use <a href="https://bio.tools/">Bio.tools</a>, a software registry focused on the bioinformatics domain. For training purposes, we will use the <a href="https://dev.bio.tools">development instance of bio.tools</a>. You will need to create a dev.bio.tools account before the workshop.
 </p>
 <p>
-Go to the <a href="https://dev.bio.tools">dev.bio.tools</a> website click on the sign-up link on the top right and follow the instructions. After creating an account check if you can log in and make sure you remember your password. 
+Go to the <a href="https://dev.bio.tools">dev.bio.tools</a> website, click on the sign-up link on the top right, and follow the instructions. After creating an account check if you can log in and make sure you remember your password.
 </p>
 </div>
 

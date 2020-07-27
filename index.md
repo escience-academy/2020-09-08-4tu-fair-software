@@ -336,6 +336,7 @@ You will need a GitHub account to do that.
 <a href="https://github.com/join?source=header-home">Create a GitHub account</a> if you haven’t done that yet. Make sure you remember your password and can log in.
 </p>
 
+{% comment %}
 <div id="bio.tools">
 <h3>Bio.tools</h3>
 <p>
@@ -345,6 +346,7 @@ We will learn how to register your software in an online software registry. As a
 Go to the <a href="https://dev.bio.tools">dev.bio.tools</a> website, click on the sign-up link on the top right, and follow the instructions. After creating an account check if you can log in and make sure you remember your password.
 </p>
 </div>
+{% endcomment %}
 
 <div>
   This website is based on the <a href='http://www.software-carpentry.org'>Software Carpentry</a>
